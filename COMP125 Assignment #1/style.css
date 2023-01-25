@@ -1,0 +1,66 @@
+.Wilderness-1-hex { color: #34401A; }
+.Wilderness-2-hex { color: #64732F; }
+.Wilderness-3-hex { color: #CAD959; }
+.Wilderness-4-hex { color: #B4BF5E; }
+.Wilderness-5-hex { color: #252617; }
+
+.Wilderness-3-hex { color: #e2e4d6; }
+.Wilderness-3-hex { color: #fdfdfb; }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+header {
+    background-color:#B4BF5E ;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    border: 1px solid #B4BF5E;
+    border-radius: 0.5rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#fdfdfb;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+    background-color: #e2e4d6;
+    border: 1px solid #B4BF5E;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+button {
+    margin: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    color: #e2e4d6;
+}
+
+button:hover {
+    background-color: #252617;
+    color: #B4BF5E;
+    transition: 100ms;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    background-color:#B4BF5E ;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    border: 1px solid #B4BF5E;
+    border-radius: 0.5rem;
+    height: 30px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
