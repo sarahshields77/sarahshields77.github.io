@@ -229,7 +229,7 @@ function setupGallery() {
    body.appendChild(footer);
 
    var footerP = document.createElement("P"); 
-   var footerText = document.createTextNode("Copyright \xA9 2022 Sarah Shields 301264350 COMP125 Sec 401 Winter 2023");
+   var footerText = document.createTextNode("Copyright \xA9 2023 Sarah Shields 301264350 COMP125 Sec 401 Winter 2023");
    footerP.appendChild(footerText);
    footer.appendChild(footerP);
    
