@@ -201,10 +201,18 @@ function setupGallery() {
             document.body.removeChild(modalWindow);
 
             faveListLi.appendChild(faveItem);
-            faveListLi.prepend(removeButton);
+            //faveListLi.prepend(removeButton);
             favesList.appendChild(faveListLi);
-            modalImage.faveItem = faveListLi;  
+            //modalImage.faveItem = faveListLi;  
          }
+         for (let i = 0; i <= numberOfItemsInFaves; ++i) {
+            var currentFave = favesList.children[i];
+            
+         }
+            currentFave.onclick = function() {
+               faveListLi.prepend(removeButton);
+               modalImage.faveItem = faveListLi; 
+            }
       };
       
       removeButton.onclick = function() {
