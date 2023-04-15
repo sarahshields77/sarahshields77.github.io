@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: baseline; /*i added to try*/
+}
+
+@font-face {
+	font-family: BadlyStamped;
+	src: url(BadlyStamped.ttf);
+  }
+
+body{
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Special Elite', cursive;
+	min-height: 100vh;
+	color: #555;
+	background-color: #e4dbd4;
+	width: 1000px; /*i added to try*/
+	margin: 0 auto;  /*i added to try*/
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*width: 100%;*/
+	width: 1000px;
+	height: 200px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://as2.ftcdn.net/v2/jpg/03/77/83/91/1000_F_377839160_Y3R93l00B690OO8nBhYK5k4dGgzLZ6Fy.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	margin-bottom: 40px;
+  }
+  
+  .header h3 {
+	font-family: "BadlyStamped";
+	font-size: 60px;
+	color: #e4dbd4;
+	/*font-weight: bold;*/
+	text-transform: uppercase;
+	margin: 0;
+  }
+  
+  .header p {
+	font-size: 40px;
+	color: rgb(245, 240, 240);
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-family: 'Special Elite', cursive;
+  }
+
+h2{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+#myProgress {
+	/*width: 100%;*/
+	width: 1000px;
+	background-color: #faf8f7;
+  }
+  
+  #myBar {
+	width: 1%;
+	height: 30px;
+	background-color: #281f19;
+  }
+
+.products{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	grid-gap: 25px;
+	margin: 50px auto;
+	max-width: 1240px;
+	padding: 20px;
+}
+
+.product{
+	padding: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product img{
+	width: 100%;
+	display: block;
+}
+
+.product .title{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.product .description{
+	padding: 0 10px 10px 10px;	
+	line-height: 22px;
+}
+
+.product .price{
+	text-align: center;
+	font-weight: 600;
+	font-size: 28px;
+	color: #281f19;
+	padding-top: 10px;
+	font-family: sans-serif;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product .cart{
+	text-align: center;
+	padding: 15px 0;
+	margin-top: 10px;
+	background-color: #281f19;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.product .cart i{
+	padding-left: 10px;
+}
+
+.view-more{
+	margin: 0 auto;
+	max-width: 1240px;
+	padding: 20px;
+	text-align: center;
+}
+
+.view-more button{
+	padding: 10px 25px;
+}
+
+.footer {
+	font-size: 12px;
+	line-height: 2px;
+	background-color: #d7cac0;
+	padding: 10px;
+	color: #281f19;
+	height: 110px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .footer p {
+	font-size: 12px;
+	padding-bottom: 20px;
+	margin: 50px;
+	text-align: right;
+	font-family: 'Special Elite', cursive;
+  }
+
+  /* ----------------------------------------------------*/
+/* Styles for the overlay displaying an image in fullscreen*/
+/* Styles for the overlay */
+div#lbOverlay {
+    position: fixed;                        /* Overlay is fixed on screen */
+    z-index: 1;                             /* Overlay sits on top of other content */
+    width: 100%;                            /* Full width */
+    height: 100%;                           /* Full height */
+    top: 0;
+    left: 0;
+    background-color: rgba(104,49,0,0.85);  /* Semitransparent brown background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ /* Styles for the figure box within the overlay */
+ div#lbOverlay figure {
+    display: block;
+    width: 80%;
+    max-width: 800px;
+ }
+ /* Styles for the image within the overlay */
+ div#lbOverlay figure img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 20px black;
+    animation-name: zoom;      /* animate the opening of the figure */
+    animation-duration: 1s;    /* over a 1-second interval */
+ }
+ /* Styles for the caption within the overlay */
+ div#lbOverlay figure figcaption {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    margin-top: 10px;
+    animation-name: zoom;      /* animate the opening of the figure */
+    animation-duration: 1s;    /* over a 1-second interval */  
+ }
+ /* Styles for the overlay close button */
+ div#lbOverlay div#lbOverlayClose {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+ }
+ /* Hovering styles for the modal window close button */
+ div#lbOverlay div#lbOverlayClose:hover {
+    color: #F7F1A9;
+    text-shadow: 3px 3px 0px black;
+ }
+ /* Keyframe animation for the opening of the modal window figure and caption */
+ @keyframes zoom {
+   from {transform:scale(0)}
+   to {transform:scale(1)}
+ }
