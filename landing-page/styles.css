@@ -1,0 +1,24 @@
+header {
+    background-color: #1F2937;
+    /*font-size: 48px;
+    font-style: extra-bold;
+    font: #F9FAF8;*/
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#HeaderLogo {
+    font-size: 12px;
+}
+
+#HeaderLinks {
+    font-size: 10px;
+    flex-direction: row;
+}
+
+
+
+
+
